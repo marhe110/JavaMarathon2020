@@ -25,11 +25,11 @@ public class Task6 {
         int k = 9;
         int multiplier = 0;
         int result;
-        while (true){
-            if (multiplier > 9){
+        while (true) {
+            if (multiplier > 9) {
                 break;
             }
-            result = k*multiplier;
+            result = k * multiplier;
             System.out.println(multiplier + " x " + k + " = " + result);
             multiplier++;
 
