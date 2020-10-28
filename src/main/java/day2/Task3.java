@@ -10,8 +10,8 @@ public class Task3 {
         int b = scanner.nextInt();
         int i = a + 1;
         if (a > b) System.out.println("Некорректный ввод");
-        while (a < i && i < b) {
-            if (i % 5 == 0 && (i % 10) != 0)
+        while (i < b) {
+            if (i % 5 == 0 && i % 10 != 0)
                 System.out.print(i + " ");
             i++;
         }
