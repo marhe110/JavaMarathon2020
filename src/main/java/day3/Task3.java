@@ -27,6 +27,7 @@ public class Task3 {
             del1 = scanner.nextDouble();
             del2 = scanner.nextDouble();
 
+/*
             if (del2.compareTo((double) 0) == 0) {
                 System.out.println("Деление на 0");
             }
@@ -34,6 +35,15 @@ public class Task3 {
                 result = del1 / del2;
                 System.out.println(result);
             }
+*/
+
+            if (del2 == 0) {
+                System.out.println("Деление на 0");
+                continue;
+            }
+            result = del1 / del2;
+                System.out.println(result);
         }
+
     }
 }
