@@ -1,11 +1,11 @@
-package day5;
+package day6;
 
 public class Motorbike {
     private int year;
     private String color;
     private String model;
 
-    Motorbike(String model, String color, int year) {
+    public Motorbike(String model, String color, int year) {
         this.model = model;
         this.color = color;
         this.year = year;
@@ -21,5 +21,13 @@ public class Motorbike {
 
     public String getModel() {
         return model;
+    }
+
+    public void info(){
+        System.out.println("Это мотоцикл");
+    }
+
+    public int yearDifference(int year) {
+        return (this.year - year);
     }
 }
