@@ -29,12 +29,15 @@ public class Teacher {
                 strGrade = "отлично";
                 break;
             default:
-                strGrade = "null. весь месяц пил пиво на последней парте"  ;
-                break;
+                System.out.println("Неправильная оценка");// весь месяц пил пиво на последней парте"
+
         }
-        System.out.println("Преподаватель оценил студента с именем " + student.getName()
-                + " по предмету " + lesson
-                + " на оценку " + grade);
+        if (!strGrade.equals("")) {
+            System.out.println("Преподаватель "+ name
+                    + " оценил студента с именем " + student.getName()
+                    + " по предмету " + lesson
+                    + " на оценку " + strGrade + ".");
+        }
     }
 
     public void evaluate(Student student) {
@@ -45,7 +48,7 @@ public class Teacher {
         if (student.getSex().equals("man")) {
             grade = random.nextInt(3) + 2;
         } else {
-            grade = random.nextInt(1) + 4;
+            grade = random.nextInt(1) + 4;//woman
         }
 
         switch (grade) {
@@ -61,10 +64,16 @@ public class Teacher {
             case 5:
                 strGrade = "отлично";
                 break;
+            default:
+                System.out.println("Неправильная оценка");
+
         }
-        System.out.println("Преподаватель оценил студента с именем " + student.getName()
-                            + " по предмету " + lesson
-                            + " на оценку " + grade);
+        if (!strGrade.equals("")) {
+            System.out.println("Преподаватель "+ name
+                    + " оценил студента с именем " + student.getName()
+                    + " по предмету " + lesson
+                    + " на оценку " + strGrade + ".");
+        }
 
     }
 }

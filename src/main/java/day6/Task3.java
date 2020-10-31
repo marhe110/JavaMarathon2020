@@ -26,8 +26,8 @@ public class Task3 {
         Student student1 = new Student("Иван");
         Student student2 = new Student("Ольга");
 
-        teacher.evaluate(student1, 5); // for test
-        teacher.evaluate(student2); // for task
+       teacher.evaluate(student1, 5);
+       teacher.evaluate(student2);
 
     }
 }
