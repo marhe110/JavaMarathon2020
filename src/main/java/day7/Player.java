@@ -9,7 +9,6 @@ public class Player {
     private static int allStamina;
 
     public Player(int stamina) {
-        if (stamina > MIN_STAMINA && stamina <= MAX_STAMINA) {
             if (countPlayers < 6) {
                 countPlayers++;
                 allStamina += stamina;
@@ -18,9 +17,6 @@ public class Player {
             } else {
                 info();
             }
-        } else {
-            System.out.println("ошибка ввода");
-        }
     }
 
     public static int getAllStamina() {

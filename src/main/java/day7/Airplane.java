@@ -24,7 +24,7 @@ public class Airplane {
                     int length,
                     int weight) {
 
-        int fuel = 0;
+//        int fuel = 0;
         this.producer = producer;
         this.year = year;
         this.length = length;
