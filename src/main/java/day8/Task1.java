@@ -8,43 +8,34 @@
 //        (класс String) и использовании StringBuilder,
 //        реализуйте описанную задачу этими двумя способами, замеряя время работы программы.
 
-        package day8;
+package day8;
 
 public class Task1 {
     public static void main(String[] args) {
-        System.out.println(strBild1());
-        System.out.println(strBild2());
+        System.out.println(strBild());
+
         System.out.println(concatenate());
 
     }
-    static Long strBild1(){
+
+    static Long strBild() {
         StringBuilder sb = new StringBuilder("");
+        long start = System.currentTimeMillis();
+
         for (int i = 0; i < 20000; i++) {
             sb.append(i).append(" ");
         }
-        long start = System.currentTimeMillis();
-        System.out.println(sb.toString());
         long finish = System.currentTimeMillis();
         return finish - start;
     }
-    static long strBild2() {
-        StringBuilder sb = new StringBuilder("");
 
+    static long concatenate() {
+        String str = "";
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 20000; i++) {
-            sb.append(i+ " ");
-        }
-        long finish = System.currentTimeMillis();
-        return finish - start;
-    }
-    static long concatenate(){
-         String str ="";
 
         for (int i = 0; i < 20000; i++) {
             str += i + " ";
         }
-        long start = System.currentTimeMillis();
-        System.out.println(str);
         long finish = System.currentTimeMillis();
         return finish - start;
 
