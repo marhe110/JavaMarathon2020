@@ -1,5 +1,7 @@
 //package Tests.day11;
 //
+//import day11.task1.Picker;
+//import day11.task1.Warehouse;
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //

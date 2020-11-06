@@ -1,5 +1,7 @@
 //package Tests.day11;
 //
+//import day11.task1.Courier;
+//import day11.task1.Warehouse;
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //
@@ -56,6 +58,7 @@
 //    }
 //
 //    @Test
+//
 //    void bonusNo() {
 //        courier.doWork();
 //        w.setBalance(999_999);
