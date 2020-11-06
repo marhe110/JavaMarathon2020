@@ -9,20 +9,24 @@ package day11.task1;
 // (один из возможных вариантов - передавать объект склада в качестве аргумента при создании
 // объектов-работников и хранить его в поле).
 public class Picker implements Worker {
-    private int salary;
 
-    private Warehouse warehouse;
+    private int salary;
     private int orderForBonus = 10000;
-    int paymentAmount;
+    private Warehouse warehouse;
+    private boolean isBonus = true;
+
+
     public Picker(Warehouse warehouse) {
         this.warehouse = warehouse;
     }
 
     @Override
     public void doWork() {
-        salary += 100;
+        salary += 80;
         warehouse.setCountPickedOrders();
-
+        if (warehouse.getCountPickedOrders() % orderForBonus == 0) {
+            isBonus = true;
+        }
     }
 
     public int getSalary() {
@@ -31,20 +35,18 @@ public class Picker implements Worker {
 
     @Override
     public void bonus() {
-        //System.out.println("getCountPickedOrders"+ warehouse.getCountPickedOrders());
-        if (warehouse.getCountPickedOrders() % 10000 == 0 && paymentAmount < warehouse.getCountPickedOrders()) {
-            paymentAmount += orderForBonus;
+        if (warehouse.getCountPickedOrders() % 10000 == 0  && isBonus) {
             salary += 70000;
-            //System.out.println("bonus выплачен сейчас");
-        } else if (paymentAmount < warehouse.getCountPickedOrders()) {
+            isBonus = false;
+            orderForBonus+=orderForBonus;
+        } else if (isBonus && warehouse.getCountPickedOrders() < orderForBonus) {
             System.out.println("Бонус пока не доступен");
-        } else {
+        }
+        else {
             System.out.println("Бонус уже был выплачен");
         }
-
     }
 
-    @Override
     public String toString() {
         return "Picker {" +
                 "salary= " + salary +

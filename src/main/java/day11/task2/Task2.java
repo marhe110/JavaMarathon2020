@@ -8,17 +8,17 @@ public class Task2 {
         Shaman shaman1 = new Shaman();
 
         warrior1.physicalAttack(paladin1);
-//        paladin1.physicalAttack(magician1);
-//        shaman1.healTeammate(magician1);
-//        magician1.magicalAttack(paladin1);
-//        shaman1.physicalAttack(warrior1);
-//        paladin1.healHimself();
-//
-//        warrior1.physicalAttack(magician1);
-//        warrior1.physicalAttack(magician1);
-//        warrior1.physicalAttack(magician1);
-//        warrior1.physicalAttack(magician1);
-//        warrior1.physicalAttack(magician1);
+        paladin1.physicalAttack(magician1);
+        shaman1.healTeammate(magician1);
+        magician1.magicalAttack(paladin1);
+        shaman1.physicalAttack(warrior1);
+        paladin1.healHimself();
+
+        warrior1.physicalAttack(magician1);
+        warrior1.physicalAttack(magician1);
+        warrior1.physicalAttack(magician1);
+        warrior1.physicalAttack(magician1);
+        warrior1.physicalAttack(magician1);
 
 
 //        Воин атакует Паладина

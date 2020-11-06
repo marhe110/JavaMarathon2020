@@ -60,6 +60,8 @@ public class Task1 {
         businessProcess(courier1);
         picker1.bonus();
         courier1.bonus();
+//        courier1.bonus();
+
         System.out.println("Количество собранных заказов = " + warehouse1.getCountPickedOrders());
         System.out.println("Количество доставленных заказов = " + warehouse1.getCountDeliveredOrders());
         System.out.println(courier1);

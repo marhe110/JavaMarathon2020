@@ -7,30 +7,20 @@ public class Warrior extends Hero implements PhysAttack {
 //    physAtt (величина физической атаки), по необходимости
 //    magicAtt (величина магической атаки), по необходимости
 
-    private int health = 100;
-    private int physAtt = 30;
-    //private int magicAtt = 0;
-    private int phisDef = 80;
-    //private int magicDef = 0;
-
-    public int getHealth() {
-        return health;
-    }
-
-    public int getPhysAtt() {
-        return physAtt;
-    }
-
-    public int getPhisDef() {
-        return phisDef;
+    public Warrior(){
+        health = 100;
+        physAtt = 30;
+        phisDef = 80;
     }
 
     @Override
     public void physicalAttack(Hero hero) {
-        if (hero.phisDef > 0) {
-            hero.health -= (physAtt * hero.phisDef) / 100;
-            System.out.println(hero.toString());
+        hero.health -= physAtt - (physAtt * hero.phisDef / 100);
+        if (hero.health < 0) {
+            hero.health = 0;
         }
+        System.out.println(hero.toString());
+
     }
 
     @Override
