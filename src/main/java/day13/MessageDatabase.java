@@ -21,7 +21,7 @@ public class MessageDatabase {
         for (Message message : messages){
             if ((message.getSender().equals(user1) && message.getReceiver().equals(user2)) ||
                     (message.getSender().equals(user2) && message.getReceiver().equals(user1))){
-                System.out.println(message.getSender() + ":" + message.getText());
+                System.out.println(message.getSender() + " : " + message.getText());
             }
         }
     }
