@@ -50,7 +50,7 @@ public class Task1 {
         }
         average = sum / (double) count;
 
-        System.out.printf("%.3f \n", average);
-        System.out.print(average);
+        System.out.printf("%f -->%.3f \n", average, average);
+        //System.out.print();
     }
 }
