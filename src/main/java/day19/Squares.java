@@ -1,10 +1,12 @@
-package finishTask;
+package day19;
 
 public enum Squares {
     IS_SHIP("⛵ "),
-    IS_HALO("\uD83D\uDFE6 "),
+    IS_HALO("\uD83D\uDFE6"),
     IS_EMPTY("\uD83D\uDFE5");
 
+    private int coordX;
+    private int coordY;
     private String symbol;
 
     Squares(String symbol){
@@ -13,6 +15,22 @@ public enum Squares {
 
     public String getSymbol() {
         return symbol;
+    }
+
+    public int getCoordX() {
+        return coordX;
+    }
+
+    public void setCoordX(int coordX) {
+        this.coordX = coordX;
+    }
+
+    public int getCoordY() {
+        return coordY;
+    }
+
+    public void setCoordY(int coordY) {
+        this.coordY = coordY;
     }
 }
 

@@ -1,4 +1,5 @@
-package finishTask;
+package day19;
+
 
 public class Pixel {//расширенный энам
     private int positionX;
