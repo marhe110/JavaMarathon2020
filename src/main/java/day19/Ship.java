@@ -40,10 +40,8 @@ public class Ship {
                     }
                     else new Exception();
 
-                    //if (pixels(Pixel(Squares.IS_SHIP, Integer.parseInt(positionStr[0]), Integer.parseInt(positionStr[1]))) );
-                    pixels.add(new Pixel(Squares.IS_SHIP, Integer.parseInt(positionStr[0]), Integer.parseInt(positionStr[1])));
-                    ;
-                    List<int[][]> list = new ArrayList<>();
+//                    int[][] array = new int[4][4];
+//                    List<int[][],> list = new ArrayList<>();
 
                     System.out.println("aaa");
 
